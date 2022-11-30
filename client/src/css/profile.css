@@ -1,0 +1,76 @@
+:root {
+    --darkerTeal: rgba(104, 179, 175, 1);
+    --lighterTeal: rgba(135, 189, 177, 1);
+    --seaGreen: rgba(170, 204, 177, 1);
+    --springGreen: rgba(195, 219, 180, 1);
+    --paleGreen: rgba(211, 226, 182, 1);
+    --SerifFont: 'Taviraj', serif;
+    --MonoFont: 'Cutive Mono', monospace;
+}
+
+#profile {
+    min-height: 86vh;
+    display: flex;
+    flex: 1;
+    flex-grow: 1;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#profile h1 {
+    margin: 0;
+    padding: 0;
+    font-family: var(--SerifFont);
+    color: #2a2a2a;
+    font-size: 50px;
+}
+#profile h4 {
+    margin: 0;
+    padding: 0;
+    font-family: var(--SerifFont);
+    color: #2a2a2a;
+    font-size: 30px;
+}
+
+#profile ul {
+    width: 50%;
+    text-align: left;
+}
+
+#profile .newPollForm {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+
+#profile button {
+    background-color: var(--paleGreen);
+    font-family: var(--MonoFont);
+    font-size: 20px;
+    border: none;
+}
+
+#profile button:hover {
+    background-color: var(--lighterTeal);
+}
+
+/* Small smartphones */
+@media screen and (max-width: 576px) {
+    #profile h1 {
+        font-size: 35px;
+    }
+    #profile h4 {
+        font-size: 20px;
+    }
+    #profile ul {
+        width: 100%;
+        text-align: left;
+    }
+    #profile button {
+        width: 90%;
+    }
+}

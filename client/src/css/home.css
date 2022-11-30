@@ -1,0 +1,53 @@
+:root {
+    --darkerTeal: rgba(104, 179, 175, 1);
+    --lighterTeal: rgba(135, 189, 177, 1);
+    --seaGreen: rgba(170, 204, 177, 1);
+    --springGreen: rgba(195, 219, 180, 1);
+    --paleGreen: rgba(211, 226, 182, 1);
+    --SerifFont: 'Taviraj', serif;
+    --MonoFont: 'Cutive Mono', monospace;
+}
+
+#homePage {
+    min-height: 86vh;
+    display: flex;
+    flex: 1;
+    flex-grow: 1;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#titleContainer {
+    flex: 1;
+    flex-grow: 1;
+    flex-basis: 50%;
+    text-align: center;
+}
+
+#titleContainer h1 {
+    font-family: var(--MonoFont);
+    color: #2a2a2a;
+    font-size: 90px;
+    margin: 0;
+    padding: 0;
+}
+
+#titleContainer h2 {
+    font-family: var(--MonoFont);
+    color: #2a2a2a;
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Small smartphones */
+@media screen and (max-width: 576px) {
+
+#titleContainer h1 {
+    font-size: 70px;
+}
+#titleContainer h2 {
+    font-size: 15px;
+}
+}
